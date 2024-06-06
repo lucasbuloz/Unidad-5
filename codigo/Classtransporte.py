@@ -1,27 +1,28 @@
 from datetime import datetime
-from typing import Any
 
 class Transporte:
-    __nrotrans: int
-    __fechaHoraSalida: datetime
-    __fechaHoraLlegada: datetime
-    __idtrans: int
+    __id: int
+    __numeroTransporte = int
+    __fechaHoraSaida = datetime
+    __fechaHoraLLegada = datetime
     
-    def __init__(self, nrotrans, fechaHoraSalida, fechaHoraLlegada, idtrans):
-        self.__nrotrans = nrotrans
-        self.__fechaHoraSalida = fechaHoraSalida
-        self.__fechaHoraLlegada = fechaHoraLlegada    
-        self.__idtrans = idtrans
+    def __init__(self, numeroTransporte, fechaHoraSaida, fechaHoraLLegada, id):
+        self.__id = id
+        self.__numeroTransporte = numeroTransporte
+        self.__fechaHoraSaida = fechaHoraSaida
+        self.__fechaHoraLLegada = fechaHoraLLegada
+
+    def getNumeroTransporte(self):
+        return self.__numeroTransporte
+
+    def getFechaHoraSaida(self):
+        return self.__fechaHoraSaida
+
+    def getFechaHoraLLegada(self):
+        return self.__fechaHoraLLegada
     
-    def getNrotrans(self):
-        return self.__nrotrans
-    def getFechaHoraSalida(self):
-        return self.__fechaHoraSalida
-    def getFechaHoraLlegada(self):
-        return self.__fechaHoraLlegada
-    def getIdtrans(self):
-        return self.__idtrans
+    def getId(self):
+        return self.__id
     
     def __str__(self):
-        return f"NROTRANS: {self.__nrotrans}, FECHA HORA SALIDA: {self.__fechaHoraSalida}, FECHA HORA Llegada: {self.__fechaHoraLlegada}"
-    
+        return f"Transporte {self.__numeroTransporte} {self.__fechaHoraSaida} {self.__fechaHoraLLegada} {self.__id}"
