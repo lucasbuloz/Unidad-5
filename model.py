@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy(app)
 
 class Sucursal(db.Model):
-    __tablename__ = 'sucursal'
+    __tablename__ = 'Sucursal'
     id = db.Column(db.Integer, primary_key=True)
     numero = db.Column(db.Integer)
     provincia = db.Column(db.String(30))

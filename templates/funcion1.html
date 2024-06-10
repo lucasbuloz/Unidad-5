@@ -14,32 +14,55 @@
         </div>
     </header>
     <div class="container" id="sucursal1">
-        <h1> Numero de sucursal</h1>
-        <p>provincia</p>
-        <p>localidad</p>
-        <button id="button" type="submit">ingresar</button>
-    </div>
-    <div class="container" id="sucursal1">
-        <h1> Numero de sucursal</h1>
+        <h1> Sucursal 1</h1>
         <ul>
-            <li {(Sucursal.id)}>ID: </li>
-            <li {(Sucursal.numero)} > Numero: </li>
-            <li {(Sucursal.provincia)} >Provincia: </li>
-            <li {(Sucursal.localidad)} >Localidad: </li>
-            <li {(Sucursal.direccion)}> Direccion:  </li>
+            {% for Sucursal in Sucursal %}
+            <li ID: {{Sucursal.id}}>  </li>
+            <li Numero: {{Sucursal.numero}} >   </li>
+            <li Provincia: {{Sucursal.provincia}}> </li>
+            <li Localidad: {{Sucursal.localidad}}>  </li>
+            <li Direccion: {{Sucursal.direccion}}>   </li>
+            {% endfor %}
         </ul>
         <button id="button" type="submit">ingresar</button>
     </div>
     <div class="container" id="sucursal1">
-        <h1> Numero de sucursal</h1>
-        <p>provincia</p>
-        <p>localidad</p>
+        <h1>Sucursal 2</h1>
+        <ul>
+            {% for Sucursal in Sucursales %}
+            <li ID: {{Sucursal.id}}>  </li>
+            <li Numero: {{Sucursal.numero}} >   </li>
+            <li Provincia: {{Sucursal.provincia}}> </li>
+            <li Localidad: {{Sucursal.localidad}}>  </li>
+            <li Direccion: {{Sucursal.direccion}}>   </li>
+            {% endfor %}
+        </ul>
+        <button id="button" type="submit">ingresar</button>
+    </div>
+    <div class="container" id="sucursal1">
+        <h1> Sucursal 3</h1>
+        <ul>
+            {% for Sucursal in Sucursales %}
+            <li ID: {{Sucursal.id}}>  </li>
+            <li Numero: {{Sucursal.numero}} >   </li>
+            <li Provincia: {{Sucursal.provincia}}> </li>
+            <li Localidad: {{Sucursal.localidad}}>  </li>
+            <li Direccion: {{Sucursal.direccion}}>   </li>
+            {% endfor %}
+        </ul>
         <button id="button2"type="submit">ingresar</button>
     </div>
     <div class="container" id="sucursal1">
-        <h1> Numero de sucursal</h1>
-        <p>provincia</p>
-        <p>localidad</p>
+        <h1> Sucursal 4</h1>
+        <ul>
+            {% for Sucursal in Sucursales %}
+            <li ID: {{Sucursal.id}}>  </li>
+            <li Numero: {{Sucursal.numero}} >   </li>
+            <li Provincia: {{Sucursal.provincia}}> </li>
+            <li Localidad: {{Sucursal.localidad}}>  </li>
+            <li Direccion: {{Sucursal.direccion}}>   </li>
+            {% endfor %}
+        </ul>
         <button id="button3"type="submit">ingresar</button>
     </div>
 </body>

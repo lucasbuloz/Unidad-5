@@ -1,16 +1,17 @@
 from flask import Flask, render_template, request, redirect, session
 from flask_sqlalchemy import SQLAlchemy
 
+
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
+from model import Sucursal, db, Repartidor, Paquete, Transporte
 
-
-from model import Sucursal, Repartidor, Paquete, Transporte, db
-
+        
 @app.route('/')
 def index():
-    return render_template('funcion1.html')
-
+    ##COMPLETARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+    sucursales = Sucursal.query.order_by(Sucursal.id).all()  # Ordenar por ID
+    return render_template('funcion1.html', sucursales=sucursales)
 
 
 @app.route("/funcion1")
