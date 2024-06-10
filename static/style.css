@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     background-color: #f4f4f9;
-    color: #161615;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ body {
 .titulo {
     font-family: 'Georgia', serif;
     text-align: center;
-    color: #333;
+    color: #377ba8;
     margin-bottom: 20px;
 }
 
@@ -23,7 +23,7 @@ body {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container label {
@@ -33,7 +33,7 @@ body {
     color: #333;
 }
 
-.container input[type="text"], 
+.container input[type="text"],
 .container input[type="password"] {
     width: calc(100% - 2em);
     padding: 0.75em;
@@ -47,7 +47,7 @@ body {
 .container input[type="submit"] {
     width: 100%;
     padding: 0.75em;
-    background-color: #377ba8;
+    background-color: #285e8e;
     color: white;
     border: none;
     border-radius: 4px;
@@ -57,5 +57,6 @@ body {
 }
 
 .container input[type="submit"]:hover {
-    background-color: #285e8e;
+    background-color: #377ba8;
 }
+

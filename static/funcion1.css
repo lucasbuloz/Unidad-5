@@ -1,0 +1,26 @@
+/* funcion1.css */
+
+/* Style for the header */
+.header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the container */
+.container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for the buttons */
+#button,
+#button2,
+#button3 {
+    background-color:#285e8e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
         <h1 class="titulo">Logi Pack</h1>
-        <form action="http://localhost:5000/bienvenida" method="post">
+        <form action="http://localhost:5000/funcion1" method="post">
             <label for="despachante">ID de Despachante</label>
-            <input type="text" id="despachante" name="despachante" placeholder="ID de Despachante">
-
+            <input type="text" id="despachante" name="despachante" placeholder="Ingrese ID de Despachante">
             <input type="submit" value="Entrar">
         </form>
     </div>
