@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
     <title>funcion 1</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='funcion1.css') }}">
 </head>
@@ -13,25 +14,30 @@
         </div>
     </header>
     <div class="container" id="sucursal1">
-        <h1>Numero de sucursal</h1>
+        <h1> Numero de sucursal</h1>
         <p>provincia</p>
         <p>localidad</p>
         <button id="button" type="submit">ingresar</button>
     </div>
     <div class="container" id="sucursal1">
-        <h1>numero de sucursal</h1>
-        <p>provincia</p>
-        <p>localidad</p>
+        <h1> Numero de sucursal</h1>
+        <ul>
+            <li {(Sucursal.id)}>ID: </li>
+            <li {(Sucursal.numero)} > Numero: </li>
+            <li {(Sucursal.provincia)} >Provincia: </li>
+            <li {(Sucursal.localidad)} >Localidad: </li>
+            <li {(Sucursal.direccion)}> Direccion:  </li>
+        </ul>
         <button id="button" type="submit">ingresar</button>
     </div>
     <div class="container" id="sucursal1">
-        <h1>numero de sucursal</h1>
+        <h1> Numero de sucursal</h1>
         <p>provincia</p>
         <p>localidad</p>
         <button id="button2"type="submit">ingresar</button>
     </div>
     <div class="container" id="sucursal1">
-        <h1>numero de sucursal</h1>
+        <h1> Numero de sucursal</h1>
         <p>provincia</p>
         <p>localidad</p>
         <button id="button3"type="submit">ingresar</button>

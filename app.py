@@ -9,14 +9,9 @@ from model import Sucursal, Repartidor, Paquete, Transporte, db
 
 @app.route('/')
 def index():
-    return render_template('login.html')
+    return render_template('funcion1.html')
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        session['name'] = request.form['nombre']
-        return redirect('/funcion1')
-    return render_template('login.html')
+
 
 @app.route("/funcion1")
 def funcion1():
@@ -28,13 +23,13 @@ def funcion1():
 @app.route("/sucursal2", methods=['GET', 'POST'])
 def sucursal2():
     if not session.get('name'):
-        return redirect('/login')
+        return redirect('/funcion1')
     return render_template('sucursal2.html')
 
 @app.route("/sucursal3", methods=['GET', 'POST'])
 def sucursal3():
     if not session.get('name'):
-        return redirect('/login')
+        return redirect('/funcion1')
     return render_template('sucursal3.html')
 
 

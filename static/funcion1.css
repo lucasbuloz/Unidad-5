@@ -6,6 +6,13 @@
     padding: 10px;
     text-align: center;
 }
+body {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 
 /* Style for the container */
 .container {
