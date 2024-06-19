@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Transporte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='funcion3.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Seleccionar Paquetes para Transporte</h1>
+        <form method="POST">
+            <input type="hidden" name="id_sucursal" value="{{ id_sucursal }}">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Seleccionar</th>
+                        <th>Número de Envío</th>
+                        <th>Dirección del Destinatario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for paquete in paquetes %}
+                        <tr>
+                            <td><input type="checkbox" name="paquetes" value="{{ paquete.id }}"></td>
+                            <td>{{ paquete.numeroenvio }}</td>
+                            <td>{{ paquete.dirdestinatario }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <button type="submit">Registrar Transporte</button>
+        </form>
+    </div>
+</body>
+</html>

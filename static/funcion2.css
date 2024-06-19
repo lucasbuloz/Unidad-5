@@ -1,0 +1,72 @@
+/* Resetear estilos y establecer fuente predeterminada */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color:#b5c6dc; /* Fondo suave y agradable */
+}
+
+/* Contenedor principal del formulario */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #195081;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra pronunciada */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las etiquetas */
+form label {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #c5d1d8; /* Color de texto moderno */
+}
+
+/* Estilos para los inputs y selects */
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Espaciado inferior */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box;
+}
+
+/* Estilos para el textarea */
+form textarea {
+    resize: vertical; /* Permitir solo el cambio de tamaño vertical */
+}
+
+/* Estilos para el botón de envío */
+form button {
+    padding: 12px;
+    background-color: #38495b; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Efecto hover para el botón */
+form button:hover {
+    background-color: #0c1884; /* Color de fondo del botón al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa 25%, #ffffff 100%);
+}

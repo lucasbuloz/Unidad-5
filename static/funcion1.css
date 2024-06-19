@@ -1,33 +1,64 @@
-/* funcion1.css */
-
-/* Style for the header */
-.header {
-    background-color: #f0f0f0;
-    padding: 10px;
-    text-align: center;
-}
+/* Estilos generales */
 body {
-    display:flex;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b5c6dc; /* Azul claro para el fondo */
 }
 
-/* Style for the container */
+/* Estilos para el contenedor principal */
 .container {
-    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
     padding: 20px;
-    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Fondo blanco para resaltar el contenido */
+    border: 1px solid #dbe2ef; /* Borde sutil */
 }
 
-/* Style for the buttons */
-#button,
-#button2,
-#button3 {
-    background-color:#285e8e;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+table, th, td {
+    border: 1px solid #63a1ed; /* Azul suave para las líneas de la tabla */
+}
+
+th, td {
+    text-align: left;
+    padding: 12px; /* Aumento del padding para mejor legibilidad */
+}
+
+th {
+    background-color: #266bcc; /* Azul medio para los encabezados */
+    color: #ffffff; /* Texto blanco para contraste */
+}
+
+tr:nth-child(even) {
+    background-color: #d3e0f1; /* Azul más claro para las filas pares */
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #174ea6; /* Azul más oscuro para los enlaces */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px; /* Espaciado superior */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2f50ab; /* Azul ligeramente más claro al pasar el mouse */
 }

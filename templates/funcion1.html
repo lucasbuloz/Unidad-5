@@ -3,67 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
-    <title>funcion 1</title>
+    <title>Pagina Web POO</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='funcion1.css') }}">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <h1>Sucursales</h1>
-        </div>
-    </header>
-    <div class="container" id="sucursal1">
-        <h1> Sucursal 1</h1>
-        <ul>
-            {% for Sucursal in Sucursal %}
-            <li ID: {{Sucursal.id}}>  </li>
-            <li Numero: {{Sucursal.numero}} >   </li>
-            <li Provincia: {{Sucursal.provincia}}> </li>
-            <li Localidad: {{Sucursal.localidad}}>  </li>
-            <li Direccion: {{Sucursal.direccion}}>   </li>
-            {% endfor %}
-        </ul>
-        <button id="button" type="submit">ingresar</button>
-    </div>
-    <div class="container" id="sucursal1">
-        <h1>Sucursal 2</h1>
-        <ul>
-            {% for Sucursal in Sucursales %}
-            <li ID: {{Sucursal.id}}>  </li>
-            <li Numero: {{Sucursal.numero}} >   </li>
-            <li Provincia: {{Sucursal.provincia}}> </li>
-            <li Localidad: {{Sucursal.localidad}}>  </li>
-            <li Direccion: {{Sucursal.direccion}}>   </li>
-            {% endfor %}
-        </ul>
-        <button id="button" type="submit">ingresar</button>
-    </div>
-    <div class="container" id="sucursal1">
-        <h1> Sucursal 3</h1>
-        <ul>
-            {% for Sucursal in Sucursales %}
-            <li ID: {{Sucursal.id}}>  </li>
-            <li Numero: {{Sucursal.numero}} >   </li>
-            <li Provincia: {{Sucursal.provincia}}> </li>
-            <li Localidad: {{Sucursal.localidad}}>  </li>
-            <li Direccion: {{Sucursal.direccion}}>   </li>
-            {% endfor %}
-        </ul>
-        <button id="button2"type="submit">ingresar</button>
-    </div>
-    <div class="container" id="sucursal1">
-        <h1> Sucursal 4</h1>
-        <ul>
-            {% for Sucursal in Sucursales %}
-            <li ID: {{Sucursal.id}}>  </li>
-            <li Numero: {{Sucursal.numero}} >   </li>
-            <li Provincia: {{Sucursal.provincia}}> </li>
-            <li Localidad: {{Sucursal.localidad}}>  </li>
-            <li Direccion: {{Sucursal.direccion}}>   </li>
-            {% endfor %}
-        </ul>
-        <button id="button3"type="submit">ingresar</button>
+    <div class="container">
+        <h1>Seleccione sucursal</h1>
+        <table>
+            <thead> 
+                <tr>
+                    <th>Numero</th>
+                    <th>Provincia</th>
+                    <th>Localidad</th>
+                </tr>
+            </thead> 
+            <tbody>
+                {% for sucursal in sucursales %}
+                    <tr>
+                        <td>{{ sucursal.numero }}</td>
+                        <td>{{ sucursal.provincia }}</td>
+                        <td>{{ sucursal.localidad }}</td>
+                        <td><a href="/funcion2?sucursal={{ sucursal.id }}">registrar paquete</a></td>
+                        <td><a href="/funcion3?sucursal={{ sucursal.id }}">salida de transporte</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

@@ -1,62 +1,35 @@
+/* style.css - Código Mejorado */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Arial", sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color:#b5c6dc; /* Color de fondo más suave */
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    margin: 0; /* Eliminar margen predeterminado */
+    padding: 20px; /* Agregar relleno para evitar que el contenido toque los bordes */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
 }
 
-.titulo {
-    font-family: 'Georgia', serif;
-    text-align: center;
-    color: #377ba8;
-    margin-bottom: 20px;
+h1 {
+    font-size: 2rem; /* Tamaño de fuente adaptable */
+    margin-bottom: 0.5rem; /* Espaciado debajo del título */
 }
 
-.container {
-    padding: 2em;
-    width: 320px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.container label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
-.container input[type="text"],
-.container input[type="password"] {
-    width: calc(100% - 2em);
-    padding: 0.75em;
-    margin-bottom: 1em;
-    margin-left: 0.25em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.container input[type="submit"] {
-    width: 100%;
-    padding: 0.75em;
-    background-color: #285e8e;
+button {
+    background-color: #0056b3; /* Color de botón más profundo */
     color: white;
-    border: none;
-    border-radius: 4px;
+    border: 2px solid transparent; /* Agregar borde para efecto al hacer hover */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px 20px;
+    margin: 10px; /* Aumentar margen para más espacio entre elementos */
     cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Tamaño de fuente adaptable */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para hover */
 }
 
-.container input[type="submit"]:hover {
-    background-color: #377ba8;
+button:hover {
+    background-color: white; /* Color de fondo al hacer hover */
+    color: #0056b3; /* Color de texto al hacer hover */
+    border-color: #0056b3; /* Color de borde al hacer hover */
 }
-
