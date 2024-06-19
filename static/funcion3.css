@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b5c6dc; /* Color de fondo */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Fondo blanco para resaltar el contenido */
+    border: 1px solid #e0e0e0; /* Borde sutil */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Color del encabezado */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
+}
+
+th {
+    background-color: #f9f9f9; /* Color de fondo para los encabezados */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5; /* Color de fondo para filas pares */
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

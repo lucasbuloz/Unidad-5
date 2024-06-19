@@ -81,7 +81,7 @@ def funcion3():
         if not id_sucursal:
             return redirect(url_for('funcion1'))
         
-        paquetes = Paquete.query.filter_by(idsucursal=id_sucursal, entregado=False, idrepartidor=None).all()
+        paquetes = Paquete.query.filter_by( entregado=0, idrepartidor=0).all()
         return render_template('funcion3.html', paquetes=paquetes, id_sucursal=id_sucursal)
 
 
