@@ -1,64 +1,94 @@
-/* Estilos generales */
+/* style.css - Nuevo Diseño Moderno y Minimalista */
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-color: #b5c6dc; /* Azul claro para el fondo */
+    background-color: #cecaca;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* Estilos para el contenedor principal */
-.container {
-    width: 80%;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
+.header {
+    background-color: #cecaca;
+    color:  #333;
     padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff; /* Fondo blanco para resaltar el contenido */
-    border: 1px solid #dbe2ef; /* Borde sutil */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 10px #333(0, 0, 0, 0.1);
 }
 
-/* Estilos para la tabla */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+.header h1 {
+    font-size: 2rem; /* Tamaño de fuente personalizado */
+}
+
+.container {
+    background-color:#ff6b6b; /* Fondo blanco para el contenedor */
+    padding: 40px; /* Espaciado interno amplio */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px #333(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Centrar el texto dentro del contenedor */
+}
+h2 {
+    color: #333; /* Cambio de color */
+    font-size: 30px;
 }
 
 table, th, td {
-    border: 1px solid #63a1ed; /* Azul suave para las líneas de la tabla */
+    border: 1px solid #ff6b6b;
+    background-color: #e1d0d0;
+    margin: 30px auto;
 }
 
 th, td {
     text-align: left;
-    padding: 12px; /* Aumento del padding para mejor legibilidad */
+    padding: 12px;
 }
 
 th {
-    background-color: #266bcc; /* Azul medio para los encabezados */
-    color: #ffffff; /* Texto blanco para contraste */
+    background-color: #ad4040;
+    color: #261717;
+    
 }
 
 tr:nth-child(even) {
-    background-color: #d3e0f1; /* Azul más claro para las filas pares */
+    background-color: #d3e0f1;
 }
 
-/* Estilos para los enlaces */
-a {
-    color: #174ea6; /* Azul más oscuro para los enlaces */
+a.button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 5px;
+    background-color: #ff6b6b;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px; /* Bordes redondeados */
-
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 10px; /* Espaciado superior */
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #2f50ab; /* Azul ligeramente más claro al pasar el mouse */
+a.button:hover {
+    background-color: #ff4757; /* Color de fondo más oscuro al hacer hover */
+    transform: translateY(-3px); /* Elevar el botón al hacer hover */
+}
+
+.alert {
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.alert-success {
+    color: #155724; /* Color de texto */
+    background-color: #81dda7; /* Fondo verde */
+    border-color: #03602a; /* Borde verde */
+}
+
+.alert-error {
+    color: #721c24; /* Color de texto */
+    background-color: #f8d7da; /* Fondo rojo */
+    border-color: #f5c6cb; /* Borde rojo */
 }

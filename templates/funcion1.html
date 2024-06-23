@@ -6,9 +6,28 @@
     <title>Pagina Web POO</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='funcion1.css') }}">
 </head>
+
 <body>
+    <!-- Encabezado con el nombre de la empresa -->
+    <header class="header">
+        <div class="container">
+            <h1>LogiPack</h1>
+        </div>
+    </header>
+
     <div class="container">
-        <h1>Seleccione sucursal</h1>
+        <!-- Mostrar mensajes flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div>
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        
+        <h2>Seleccione sucursal</h2>
         <table>
             <thead> 
                 <tr>
@@ -23,8 +42,9 @@
                         <td>{{ sucursal.numero }}</td>
                         <td>{{ sucursal.provincia }}</td>
                         <td>{{ sucursal.localidad }}</td>
-                        <td><a href="/funcion2?sucursal={{ sucursal.id }}">registrar paquete</a></td>
-                        <td><a href="/funcion3?sucursal={{ sucursal.id }}">salida de transporte</a></td>
+                        <td><a href="/funcion2?sucursal={{ sucursal.id }}" class="button">Registrar paquete</a></td>
+                        <td><a href="/funcion3?sucursal={{ sucursal.id }}" class="button">Salida de transporte</a></td>
+                        <td><a href="/funcion4?sucursal={{ sucursal.id }}" class="button">Llegada de transporte</a></td>
                     </tr>
                 {% endfor %}
             </tbody>

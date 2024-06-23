@@ -26,7 +26,7 @@ class Paquete(db.Model):
     peso = db.Column(db.Integer)
     nomdestinatario = db.Column(db.String(60))
     dirdestinatario = db.Column(db.String(100))
-    entregado = db.Column(db.Boolean)
+    entregado = db.Column(db.Boolean, nullable=False, default=False)
     observaciones = db.Column(db.Text)
     idsucursal = db.Column(db.Integer, db.ForeignKey('sucursal.id'))
     idtransporte = db.Column(db.Integer, db.ForeignKey('transporte.id'))

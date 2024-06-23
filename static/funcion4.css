@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #cecaca; /* Fondo suave y agradable */
+}
+
+.header {
+    color: #333; /* Color del texto del encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ff6b6b; /* Fondo blanco para resaltar el contenido */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333; /* Color de texto moderno */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #333;
+}
+h2{
+color: #333;
+}
+select {
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#cecaca;
+    color: rgb(33, 0, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+}
+
+/* Cambiar el fondo de las opciones */
+select option {
+    background-color: #cecaca; 
+    color: #333; 
+}
+
+select:hover {
+    background-color: #ff4757;
+    transform: translateY(-2px);
+}
+
+button {
+    background-color:  #cecaca; /* Color de botón rojo suave */
+    color: #333; /* Color de texto blanco */
+    font-size: 1rem;
+    border: none; /* Sin borde */
+    border-radius: 50px; /* Bordes completamente redondeados */
+    padding: 15px 30px; /* Espaciado interno amplio */
+
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+button:hover {
+    background-color: #ff4757; /* Color de fondo más oscuro al hacer hover */
+    transform: translateY(-3px); /* Elevar el botón al hacer hover */
+}
+
+button:active {
+    background-color: #ff6b6b; /* Color de fondo original al hacer clic */
+    transform: translateY(0); /* Volver a la posición original al hacer clic */
+}
+
+/* Estilos para las alertas */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #e4e4e4;
+    background-color: #0b912b;
+    border-color: #03bf2f;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

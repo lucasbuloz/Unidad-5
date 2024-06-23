@@ -1,9 +1,9 @@
 /* Resetear estilos y establecer fuente predeterminada */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    padding: 10px;
-    background-color:#b5c6dc; /* Fondo suave y agradable */
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #cecaca; /* Fondo suave y agradable */
 }
 
 /* Contenedor principal del formulario */
@@ -11,9 +11,9 @@ form {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #195081;
+    background-color: #ff6b6b; /* Fondo blanco para resaltar el contenido */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra pronunciada */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra pronunciada */
     display: flex;
     flex-direction: column;
 }
@@ -22,7 +22,7 @@ form {
 form label {
     font-size: 1rem;
     margin: 10px 0 5px;
-    color: #c5d1d8; /* Color de texto moderno */
+    color: #333; /* Color de texto moderno */
 }
 
 /* Estilos para los inputs y selects */
@@ -33,7 +33,7 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px; /* Espaciado inferior */
-    border: 1px solid #ddd; /* Borde suave */
+    border: 1px solid #ff6b6b; /* Borde suave */
     border-radius: 5px; /* Bordes redondeados */
     box-sizing: border-box;
 }
@@ -46,7 +46,7 @@ form textarea {
 /* Estilos para el botón de envío */
 form button {
     padding: 12px;
-    background-color: #38495b; /* Color de fondo del botón */
+    background-color: #ff6b6b; /* Color de fondo del botón */
     color: white;
     border: none;
     border-radius: 5px; /* Bordes redondeados */
@@ -58,8 +58,27 @@ form button {
 
 /* Efecto hover para el botón */
 form button:hover {
-    background-color: #0c1884; /* Color de fondo del botón al pasar el ratón */
+    background-color: #ff4757; /* Color de fondo del botón al pasar el ratón */
     transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color:#81dda7;
+    border-color: #03602a;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
 }
 
 /* Estilos para el cuerpo del documento */
