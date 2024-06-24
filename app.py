@@ -68,7 +68,7 @@ def funcion3():
             return redirect(url_for('funcion3', sucursal=id_sucursal))
         
         try:
-            # Crear un nuevo transporte
+           
             transporte = Transporte(
                 numerotransporte=random.randint(1000, 1500),
                 fechahorasalida=datetime.now(),
@@ -78,7 +78,7 @@ def funcion3():
             db.session.add(transporte)
             db.session.commit()
             
-            # Asociar paquetes con el transporte
+            
             for paquete_id in paquete_ids:
                 paquete = Paquete.query.get(paquete_id)
                 paquete.idtransporte = transporte.id
