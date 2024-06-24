@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #cecaca; /* Color de fondo */
+    background-color: #cecaca; 
 }
 
 .container {
@@ -17,15 +17,15 @@ body {
     overflow: hidden;
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background-color: #ff6b6b; /* Fondo blanco para resaltar el contenido */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 1px solid #333; /* Borde sutil */
+    background-color: #ff6b6b; 
+    border-radius: 10px;
+    border: 1px solid #333;
 }
 
 h1 {
     font-size: 2rem; /* Tamaño de fuente personalizado */
     margin-bottom: 20px;
-    color: #333; /* Color del encabezado */
+    color: #333; 
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ table {
 
 th, td {
     border: 1px solid #ff6b6b;
-    width: 25%; /* Ancho igual para cada columna (25% para 4 columnas) */
+    width: 25%; /* Ancho para cada columna  */
     text-align: left;
     padding: 12px;
 }
@@ -53,14 +53,13 @@ tr:nth-child(even) {
     background-color:#e1d0d0;
 }
 
-/* Estilos para los botones */
 button {
     background-color: #ad4040; /* Color de fondo del botón */
     color: #ffffff; /* Color del texto del botón */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 3px; /* Bordes redondeados */
+    border-radius: 3px; 
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
     

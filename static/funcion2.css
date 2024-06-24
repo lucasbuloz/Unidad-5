@@ -1,65 +1,76 @@
-/* Resetear estilos y establecer fuente predeterminada */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: auto;
     padding: 0;
-    background-color: #cecaca; /* Fondo suave y agradable */
+    background-color: #cecaca;
 }
 
-/* Contenedor principal del formulario */
 form {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ff6b6b; /* Fondo blanco para resaltar el contenido */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra pronunciada */
+    background-color: #ff6b6b;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
 }
 
-/* Estilos para las etiquetas */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+    text-align: center;
+    background-color: #ff6b6b;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa 25%, #ffffff 100%);
+}
+
+
 form label {
     font-size: 1rem;
     margin: 10px 0 5px;
-    color: #333; /* Color de texto moderno */
+    color: #333;
 }
 
-/* Estilos para los inputs y selects */
 form input[type="text"],
 form input[type="number"],
 form select,
 form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px; /* Espaciado inferior */
-    border: 1px solid #ff6b6b; /* Borde suave */
-    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 15px;
+    border: 1px solid #ff6b6b;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
-/* Estilos para el textarea */
 form textarea {
-    resize: vertical; /* Permitir solo el cambio de tamaño vertical */
+    resize: vertical;
 }
 
-/* Estilos para el botón de envío */
 form button {
     padding: 12px;
-    background-color: #ff6b6b; /* Color de fondo del botón */
+    background-color: #ad4040;
     color: white;
     border: none;
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 18px; /* Tamaño de fuente más grande */
+    border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 10px; /* Espaciado superior */
+    margin-top: 10px;
 }
 
-/* Efecto hover para el botón */
 form button:hover {
-    background-color: #ff4757; /* Color de fondo del botón al pasar el ratón */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: #ff4757;
+    transform: translateY(-2px);
 }
 
 .alert {
@@ -71,7 +82,7 @@ form button:hover {
 
 .alert-success {
     color: #155724;
-    background-color:#81dda7;
+    background-color: #81dda7;
     border-color: #03602a;
 }
 
@@ -79,13 +90,4 @@ form button:hover {
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
-}
-
-/* Estilos para el cuerpo del documento */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #e0f7fa 25%, #ffffff 100%);
 }

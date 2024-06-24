@@ -1,4 +1,4 @@
-/* style.css - Nuevo Diseño Moderno y Minimalista */
+
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: auto;
@@ -22,18 +22,18 @@ body {
 }
 
 .header h1 {
-    font-size: 2rem; /* Tamaño de fuente personalizado */
+    font-size: 2rem; 
 }
 
 .container {
-    background-color:#ff6b6b; /* Fondo blanco para el contenedor */
-    padding: 40px; /* Espaciado interno amplio */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px #333(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    text-align: center; /* Centrar el texto dentro del contenedor */
+    background-color:#ff6b6b; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px #333(0, 0, 0, 0.1); 
+    text-align: center;
 }
 h2 {
-    color: #333; /* Cambio de color */
+    color: #333; 
     font-size: 30px;
 }
 
@@ -78,7 +78,7 @@ a.button:hover {
     padding: 10px; /* Espaciado interno */
     margin-bottom: 15px;
     border: 1px solid transparent;
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 4px; 
 }
 
 .alert-success {
@@ -88,7 +88,7 @@ a.button:hover {
 }
 
 .alert-error {
-    color: #721c24; /* Color de texto */
-    background-color: #f8d7da; /* Fondo rojo */
-    border-color: #f5c6cb; /* Borde rojo */
+    color: #721c24;
+    background-color: #f8d7da; 
+    border-color: #f5c6cb; 
 }

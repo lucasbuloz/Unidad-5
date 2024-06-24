@@ -42,9 +42,9 @@ button:active {
     transform: translateY(0);
 }
 .container {
-    background-color:#ff6b6b; /* Fondo blanco para el contenedor */
-    padding: 40px; /* Espaciado interno amplio */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    text-align: center; /* Centrar el texto dentro del contenedor */
+    background-color:#ff6b6b;
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }

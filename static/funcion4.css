@@ -1,32 +1,30 @@
-/* Estilos generales */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: auto;
     padding: 0;
-    background-color: #cecaca; /* Fondo suave y agradable */
+    background-color: #cecaca;
 }
 
 .header {
-    color: #333; /* Color del texto del encabezado */
-    padding: 20px; /* Espaciado interno del encabezado */
-    text-align: center; /* Alineación del texto */
+    color: #333;
+    padding: 20px;
+    text-align: center;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ff6b6b; /* Fondo blanco para resaltar el contenido */
+    background-color: #ff6b6b;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #333; /* Color de texto moderno */
+    color: #333;
     margin-bottom: 20px;
 }
 
-/* Estilos para el formulario */
 form {
     display: flex;
     flex-direction: column;
@@ -37,25 +35,26 @@ label {
     margin: 10px 0 5px;
     color: #333;
 }
-h2{
-color: #333;
+
+h2 {
+    color: #333;
 }
+
 select {
     padding: 12px 20px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color:#cecaca;
+    background-color: #cecaca;
     color: rgb(33, 0, 0);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-size: 1rem;
 }
 
-/* Cambiar el fondo de las opciones */
 select option {
-    background-color: #cecaca; 
-    color: #333; 
+    background-color: #cecaca;
+    color: #333;
 }
 
 select:hover {
@@ -64,29 +63,39 @@ select:hover {
 }
 
 button {
-    background-color:  #cecaca; /* Color de botón rojo suave */
-    color: #333; /* Color de texto blanco */
+    background-color: #cecaca;
+    color: #333;
     font-size: 1rem;
-    border: none; /* Sin borde */
-    border-radius: 50px; /* Bordes completamente redondeados */
-    padding: 15px 30px; /* Espaciado interno amplio */
-
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #ff4757; /* Color de fondo más oscuro al hacer hover */
-    transform: translateY(-3px); /* Elevar el botón al hacer hover */
+    background-color: #ff4757;
+    transform: translateY(-3px);
 }
 
 button:active {
-    background-color: #ff6b6b; /* Color de fondo original al hacer clic */
-    transform: translateY(0); /* Volver a la posición original al hacer clic */
+    background-color: #ff6b6b;
+    transform: translateY(0);
 }
 
-/* Estilos para las alertas */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #ff4757;
+}
+
 .alert {
     padding: 10px;
     margin-bottom: 15px;

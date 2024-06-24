@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Web POO</title>
+    <title>Despachador</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='funcion1.css') }}">
 </head>
 
 <body>
-    <!-- Encabezado con el nombre de la empresa -->
+
     <header class="header">
         <div class="container">
             <h1>LogiPack</h1>
@@ -16,7 +16,6 @@
     </header>
 
     <div class="container">
-        <!-- Mostrar mensajes flash -->
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
                 <div>
@@ -27,7 +26,7 @@
             {% endif %}
         {% endwith %}
         
-        <h2>Seleccione sucursal</h2>
+        <h2>¿Qué desea realizar?</h2>
         <table>
             <thead> 
                 <tr>
