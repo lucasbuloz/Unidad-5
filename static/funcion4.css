@@ -1,116 +1,150 @@
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: auto;
+* {
+    margin: 0;
     padding: 0;
-    background-color: #cecaca;
+    box-sizing: border-box;
 }
 
-.header {
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
-    padding: 20px;
-    text-align: center;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ff6b6b;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-size: 1rem;
-    margin: 10px 0 5px;
-    color: #333;
-}
-
-h2 {
-    color: #333;
-}
-
-select {
-    padding: 12px 20px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #cecaca;
-    color: rgb(33, 0, 0);
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-size: 1rem;
-}
-
-select option {
-    background-color: #cecaca;
-    color: #333;
-}
-
-select:hover {
-    background-color: #ff4757;
-    transform: translateY(-2px);
-}
-
-button {
-    background-color: #cecaca;
-    color: #333;
-    font-size: 1rem;
-    border: none;
-    border-radius: 50px;
-    padding: 15px 30px;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-button:hover {
-    background-color: #ff4757;
-    transform: translateY(-3px);
-}
-
-button:active {
-    background-color: #ff6b6b;
-    transform: translateY(0);
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
+/* Estilos para la cabecera */
+.header {
+    background-color: #4285dd;
+    padding: 10px 0;
     text-align: center;
-    display: block;
-    margin-top: 20px;
 }
 
-a:hover {
-    color: #ff4757;
+.header h1 {
+    font-size: 2.5rem;
+    color:  #2c3e50;
+    margin-bottom: 0;
 }
 
+/* Estilos para mensajes de alerta */
 .alert {
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 15px;
-    border: 1px solid transparent;
     border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .alert-success {
-    color: #e4e4e4;
-    background-color: #0b912b;
-    border-color: #03bf2f;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
 }
 
 .alert-error {
-    color: #721c24;
     background-color: #f8d7da;
-    border-color: #f5c6cb;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+.flash-messages {
+    margin-bottom: 20px;
+}
+
+/* Estilos para títulos */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Estilos para formularios */
+form {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilos para contenedor de botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilos para botones */
+button,
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.button-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active,
+.button-link:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+/* Efectos adicionales */
+input[type="text"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+    border-color: #80bdff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }

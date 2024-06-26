@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='funcion3.css') }}">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <h1>LogiPack</h1>
+        </div>
+    </header>
     <div class="container">
 
         {% with messages = get_flashed_messages(with_categories=true) %}
@@ -19,7 +24,7 @@
             {% endif %}
         {% endwith %}
 
-        <h1>Seleccionar Paquetes para Transporte</h1>
+        <h1>Seleccionar paquetes para su envío</h1>
         <form method="POST">
             <input type="hidden" name="id_sucursal" value="{{ id_sucursal }}">
             <table>

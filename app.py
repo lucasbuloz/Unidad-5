@@ -82,6 +82,7 @@ def funcion3():
             for paquete_id in paquete_ids:
                 paquete = Paquete.query.get(paquete_id)
                 paquete.idtransporte = transporte.id
+                paquete.entregado = 1
                 db.session.commit()
             
             flash("Transporte registrado con éxito", "success")
@@ -95,7 +96,7 @@ def funcion3():
         if not id_sucursal:
             return redirect(url_for('funcion1'))
         
-        paquetes = Paquete.query.filter_by(entregado=0, idrepartidor=0).all()
+        paquetes = Paquete.query.filter_by(entregado=0, idrepartidor=0).all() # , idsucursal=id_sucursal filtro por sucursal
         return render_template('funcion3.html', paquetes=paquetes, id_sucursal=id_sucursal)
 
     

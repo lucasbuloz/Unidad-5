@@ -29,15 +29,17 @@
         {% endwith %}
         
         <h2>Registrar Llegada de Transporte</h2>
-        <form action="{{ url_for('funcion4') }}" method="post">
+        <form action="{{ url_for('funcion4') }}" method="post" class="center-form">
             <label for="transporte">Transporte</label>
             <select name="transporte_id" id="transporte" required>
                 {% for transporte in transportes %}
                     <option value="{{ transporte.id }}">Transporte {{ transporte.numerotransporte }} - Salida {{ transporte.fechahorasalida }}</option>
                 {% endfor %}
             </select>
-            <button type="submit">Registrar Llegada</button>
-            <a href="{{ url_for('funcion1') }}">Volver</a>
+            <div class="button-container">
+                <button type="submit">Registrar Llegada</button>
+                <a href="{{ url_for('funcion1') }}" class="button-link">Volver</a>
+            </div>
         </form>
     </div>
 </body>

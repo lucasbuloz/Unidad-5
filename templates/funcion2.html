@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='funcion2.css') }}">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <h1>LogiPack</h1>
+        </div>
+    </header>
     <div class="container">
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
@@ -22,7 +27,7 @@
         
         <h1>Crear Paquete</h1>
         <form action="{{ url_for('funcion2') }}" method="post">
-            <label for="sucursalId">Sucursal</label>
+            <label for="sucursalId">Sucursal de salida</label>
             <select name="idsucursal" id="sucursalId">
                 {% for sucursal in sucursales %}
                     <option value="{{ sucursal.id }}">{{ sucursal.provincia }} - {{ sucursal.direccion }}</option>
@@ -34,17 +39,11 @@
             <input type="text" name="dirdestinatario" id="dirdestinatario" required> 
             <label for="nomdestinatario">Nombre del destinatario</label>
             <input type="text" name="nomdestinatario" id="nomdestinatario" required>
-            <label for="entregado">Entregado</label>
-            <select name="entregado" id="entregado">
-                <option value="0">No</option>
-                <option value="1">Sí</option>
-            </select>
+            <input type="hidden" name="entregado" id="entregado" value="0">
             <label for="observaciones">Observaciones</label>
             <textarea name="observaciones" id="observaciones" rows="5" cols="50"></textarea>
-            <label for="idRepartidor">ID Repartidor</label>
-            <input type="number" name="idRepartidor" id="idRepartidor" required>
-            <label for="idTransporte">ID Transporte</label>
-            <input type="number" name="idTransporte" id="idTransporte" required>
+            <input type="hidden" name="idRepartidor" id="idRepartidor" value="0">
+            <input type="hidden" name="idTransporte" id="idTransporte" value="0">
             <button type="submit">Crear</button>
         </form>
     </div>
