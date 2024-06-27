@@ -57,18 +57,17 @@ def funcion2():
         return render_template('funcion2.html', sucursales=sucursales)
 
 
-    
 @app.route("/funcion3", methods=['GET', 'POST'])
 def funcion3():
     if request.method == 'POST':
         paquete_ids = request.form.getlist('paquetes')
         id_sucursal = request.form.get('id_sucursal')
+        
         if not paquete_ids:
             flash("No se han seleccionado paquetes para el transporte", "error")
             return redirect(url_for('funcion3', sucursal=id_sucursal))
         
         try:
-           
             transporte = Transporte(
                 numerotransporte=random.randint(1000, 1500),
                 fechahorasalida=datetime.now(),
@@ -78,17 +77,17 @@ def funcion3():
             db.session.add(transporte)
             db.session.commit()
             
-            
             for paquete_id in paquete_ids:
                 paquete = Paquete.query.get(paquete_id)
-                paquete.idtransporte = transporte.id
-                paquete.entregado = 1
-                db.session.commit()
+                if paquete:
+                    paquete.idtransporte = transporte.id
+                    paquete.entregado = 1
+                    db.session.commit()
             
             flash("Transporte registrado con éxito", "success")
         except Exception as e:
             db.session.rollback()
-            flash("Error al registrar el transporte", "error")
+            flash("Error al registrar el transporte: {}".format(str(e)), "error")
         
         return redirect(url_for('funcion1'))
     else:
@@ -96,8 +95,10 @@ def funcion3():
         if not id_sucursal:
             return redirect(url_for('funcion1'))
         
-        paquetes = Paquete.query.filter_by(entregado=0, idrepartidor=0).all() # , idsucursal=id_sucursal filtro por sucursal
+        paquetes = Paquete.query.filter_by(entregado=0, idrepartidor=0, idsucursal=id_sucursal).all() #  filtro por sucursal
         return render_template('funcion3.html', paquetes=paquetes, id_sucursal=id_sucursal)
+
+
 
     
     

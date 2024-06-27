@@ -26,13 +26,8 @@
         {% endwith %}
         
         <h1>Crear Paquete</h1>
-        <form action="{{ url_for('funcion2') }}" method="post">
-            <label for="sucursalId">Sucursal de salida</label>
-            <select name="idsucursal" id="sucursalId">
-                {% for sucursal in sucursales %}
-                    <option value="{{ sucursal.id }}">{{ sucursal.provincia }} - {{ sucursal.direccion }}</option>
-                {% endfor %}
-            </select>
+        <form action="{{ url_for('funcion2') }}" method="post">  
+            <input type="hidden" name="idsucursal" id="sucursalId" value="{{ request.args.get('sucursal') }}">
             <label for="peso">Peso</label>
             <input type="number" name="peso" id="peso" required>
             <label for="dirdestinatario">Dirección destinatario</label>
